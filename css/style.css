@@ -1,5 +1,4 @@
 
-
 a.skip{
   background: white;
   padding: 6px;
@@ -84,12 +83,11 @@ img{
 
   /*Add the media query here.  Make sure to */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px){
   nav{
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-    
-    text-align: right;
+    text-align:right;
   }
 
   nav li{
