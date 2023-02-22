@@ -9,17 +9,16 @@ a.skip{
  position: absolute;
  top: -200px;
  left: -400px;
-  
 }
 
 
   /* Requirement 2 code here -- Do not remove this comment. */
-nav a:focus{
-  text-decoration-line: overline;
-  text-decoration-thickness: 10px;
-  text-decoration-color: yellow;
-  outline: none;
-}
+  nav a:focus{
+    text-decoration-line: overline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: yellow;
+    outline: none;
+  }
 
   /* Requirement 3 code here -- Do not remove this comment. */
 .container{
@@ -51,12 +50,12 @@ img{
 
   /* Requirement 7 code here -- Do not remove this comment. */
   .about-image, .clients-image, .method-image, .contact-image{
-    grid-column-start: 1/ span 3;
+    grid-column-start: 1 / span 3;
     max-height: 500px;
   }
 
   /* Requirement 8 code here -- Do not remove this comment. */
-.about-image, .about{
+.about, .about-image{
   grid-row: 1;
 }
 
@@ -97,12 +96,12 @@ img{
   
   /* Requirement 11 code here -- Do not remove this comment. */
   a.skip:focus{
-    bottom: 20px;
+    top: 20px;
     left: 0px;
   }
 
   /* Requirement 12 code here -- Do not remove this comment. */
-  .container {
+  .container{
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 300px 300px 300px 300px;
