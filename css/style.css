@@ -5,20 +5,20 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: left 1s ease-out;
   z-index: 1;
+
   /* Requirement 1 code here -- Do not remove this comment. */
- position: absolute;
- top: -200px;
- left: -400px;
+  position: absolute;
+  top: -200px;
+  left: -400px;
 }
 
-
   /* Requirement 2 code here -- Do not remove this comment. */
-  nav a:focus{
-    text-decoration-line: overline;
-    text-decoration-thickness: 10px;
-    text-decoration-color: yellow;
-    outline: none;
-  }
+nav a:focus{
+  text-decoration-line: overline;
+  text-decoration-thickness: 10px;
+  text-decoration-color: yellow;
+  outline: none;
+}
 
   /* Requirement 3 code here -- Do not remove this comment. */
 .container{
@@ -29,30 +29,28 @@ a.skip{
 
   /* Requirement 4 code here -- Do not remove this comment. */
 .intro{
-  background-image: url("../images/header.jpg");
+  background-image: url(../images/header.jpg);
   background-color: #858585;
   min-height: 400px;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
   /* Requirement 5 code here -- Do not remove this comment. */
 .about, .clients, .method, .contact{
-  grid-column-start: 2;
+  grid-column: 2;
 }
 
   /* Requirement 6 code here -- Do not remove this comment. */
 img{
   width: 100%;
 }
-
   /* Requirement 7 code here -- Do not remove this comment. */
-  .about-image, .clients-image, .method-image, .contact-image{
-    grid-column-start: 1 / span 3;
-    max-height: 500px;
-  }
+.about-image, .clients-image, .method-image, .contact-image{
+  grid-column: 1 / span 3;
+  max-height: 500px;
+}
 
   /* Requirement 8 code here -- Do not remove this comment. */
 .about, .about-image{
@@ -70,7 +68,6 @@ img{
 .contact, .contact-image{
   grid-row: 4;
 }
-
   /* Requirement 9 code here -- Do not remove this comment. */
 .about, .clients, .method, .contact{
   align-self: center;
@@ -78,23 +75,21 @@ img{
   overflow: scroll;
 }
 
-
-
   /*Add the media query here.  Make sure to */
 
 @media screen and (min-width: 800px){
   nav{
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-    text-align:right;
+    text-align:right
   }
-
   nav li{
     margin-left: 5%;
     margin-right:0;
   }
-  
+
   /* Requirement 11 code here -- Do not remove this comment. */
+
   a.skip:focus{
     top: 20px;
     left: 0px;
@@ -107,7 +102,6 @@ img{
     grid-template-rows: 300px 300px 300px 300px;
   }
 
-
   /* Requirement 13 code here -- Do not remove this comment. */
   .about, .method, .clients-image, .contact-image{
     grid-column: 3 / span 2;
@@ -115,32 +109,32 @@ img{
 
   /* Requirement 14 code here -- Do not remove this comment. */
   .clients, .contact, .about-image, .method-image{
-    grid-column: 2 / span 2;
+   grid-column: 2 / span 2;
   }
 
   /* Requirement 15 code here -- Do not remove this comment. */
   .about-image, .clients-image, .method-image, .contact-image{
-    max-width: 100%;
-    overflow: hidden;
+  max-width: 100%;
+  overflow: hidden;
   }
 }
 
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
-   *************************************** 
+   ***************************************
    */
    @media screen and (prefers-reduced-motion: reduce){
     /*Turn off scroll*/
     html{
       scroll-behavior: auto; /* Removes scroll animation */
     }
-  
+
     /*Turn off transition*/
     a.skip {
       -webkit-transition: initial; /* sets to default setting */
       transition: initial; /* sets to default setting */
     }
-  
+
     /*Turn off parallax*/
     .intro{
       background-attachment: initial;
