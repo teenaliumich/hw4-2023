@@ -1,4 +1,5 @@
 
+
 a.skip{
   background: white;
   padding: 6px;
@@ -51,7 +52,7 @@ img{
 
   /* Requirement 7 code here -- Do not remove this comment. */
   .about-image, .clients-image, .method-image, .contact-image{
-    grid-column-start: span 3;
+    grid-column-start: 1/ span 3;
     max-height: 500px;
   }
 
@@ -73,9 +74,9 @@ img{
 }
 
   /* Requirement 9 code here -- Do not remove this comment. */
-header{
-  text-align: center;
-  max-height: 40%;
+.about, .clients, .method, .contact{
+  align-self: center;
+  max-height: 40vh;
   overflow: scroll;
 }
 
@@ -118,13 +119,13 @@ header{
   /* Requirement 14 code here -- Do not remove this comment. */
   .clients, .contact, .about-image, .method-image{
     grid-column: 2 / span 2;
-   }
+  }
 
   /* Requirement 15 code here -- Do not remove this comment. */
   .about-image, .clients-image, .method-image, .contact-image{
     max-width: 100%;
     overflow: hidden;
-    }
+  }
 }
 
 /** Code for prefers reduced motion **/
